@@ -5,7 +5,6 @@ Run on GPU: THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python main.py
 from __future__ import print_function
 from __future__ import division
 import json
-import py_crepe
 import datetime
 import numpy as np
 import data_helpers

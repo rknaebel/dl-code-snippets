@@ -5,7 +5,7 @@ from keras.utils.np_utils import to_categorical
 
 
 def load_ag_data():
-    train = pd.read_csv('data/ag_news_csv/train.csv', header=None)
+    train = pd.read_csv('../data/ag_news_csv/train.csv', header=None)
     train = train.dropna()
 
     x_train = train[1] + train[2]
@@ -14,7 +14,7 @@ def load_ag_data():
     y_train = train[0] - 1
     y_train = to_categorical(y_train)
 
-    test = pd.read_csv('data/ag_news_csv/test.csv', header=None)
+    test = pd.read_csv('../data/ag_news_csv/test.csv', header=None)
     x_test = test[1] + test[2]
     x_test = np.array(x_test)
 
